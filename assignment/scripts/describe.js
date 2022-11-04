@@ -137,10 +137,15 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - the variables are set to the wrong values. They are currently reversed.
+// It should be [let colorOne = 'blue'] and [let colorTwo = 'red' ]
+
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// FIX - colorTwo was not reassigned. Both variables were supposed to be reassigned and only reassigned colorOne
+// It should also say [colorTwo = 'purple']
 if (mix === true) {
   colorOne = 'purple';
 }
