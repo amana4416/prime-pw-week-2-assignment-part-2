@@ -159,6 +159,8 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+// FIX - || is not the correct operator for a compound conditional. We need both conditions to be met
+// It should be [ if (temp > 39 && time >=4) ]
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
