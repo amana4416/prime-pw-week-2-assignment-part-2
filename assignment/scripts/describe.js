@@ -77,9 +77,11 @@ console.log(secret)
 // We declare the variable 'isStudent' and have it set to the boolean 'true'.
 // We declare a variable 'age' and set it to 34 as number.
 // We declare the variable 'zip' and set it 55407 as a number.
-// We check to see if 'isStudent' is 'true' AND if the 'zip' is greater than 80000. Only one of these (isStudent) is true/correct so we move on to the next condition. The '&&' makes it so both conditions must be met so console.log
-// Next we check to see if 'isStudent' is 'false' and 'age' is less than 30. Neither of these conditions are met so we move on to the next condition.
-// Then we check to see if 'isStudent' is 'true', so
+// We check to see if 'isStudent' is 'true' AND if the 'zip' is greater than 80000.
+// Only one of these (isStudent) is true/correct so we move on to the next condition. The '&&' makes it so both conditions must be met so console.log
+// Next we check to see if 'isStudent' is 'false' and 'age' is less than 30. 
+// Neither of these conditions are met so we move on to the next condition.
+// Then we check to see if 'isStudent' is 'true', which it is, so
 // We console.log 'Welcome to Prime!'
 
 //CODE
@@ -173,6 +175,14 @@ if (temp > 39 || time >= 4) {
 /*
 let age = 21;
 const minAge = 21;
+
+// FIX - technically there doesn't need to be a fix. 
+// with the way the code is currently written, we are checking to see if minAge is less than or equal to age.
+// This accomplishes the same thing as checking if age is greater than or equal to minAge.
+// However, if you want the code to match the description, checking if age is greater than or equal to minAge
+// it should then be [ if (age >= minAge)]
+// but you will still get the same console.log output if you don't change anything.
+
 
 if(minAge <= age) {
   console.log('no entry');
